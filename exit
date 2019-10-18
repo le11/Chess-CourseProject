@@ -1,0 +1,53 @@
+[33mcommit 16570118835cda8adc93cd7947af640fa376340b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Tue Oct 15 00:01:20 2019 -0300
+
+    Realizando testes de movimentacao
+
+[33mcommit e4b4fc921e28ff39b6539ab58451b4f7d2c5778d[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sun Oct 13 11:11:05 2019 -0300
+
+    Melhorando e adicionando recursos ao imprimirTabuleiro
+
+[33mcommit ad11d8643e8ec92378175056f0d4ac5b96552a16[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Thu Oct 10 12:42:28 2019 -0300
+
+    Criada a classe PosicaoXadrez
+
+[33mcommit a64b3f5fba21bbd16bc35e3f915672f3542b287e[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sun Oct 6 20:35:00 2019 -0300
+
+    Utilizando excecoes personalizadas para tratamento de erros
+
+[33mcommit d2ef218cba8f2ad0e6c9eb4049d2efa55e030697[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sat Oct 5 10:45:44 2019 -0300
+
+    Adicionando pecas no tabuleiro - inicio
+
+[33mcommit 5141b3eeaba0a41d563c222686dc92bdbc9a66f1[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sat Oct 5 10:24:13 2019 -0300
+
+    Iniciando metodo imprimeTabuleiro
+
+[33mcommit 2c23e643b6b196dc403cf756ec757f4540e228e7[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sat Oct 5 10:10:44 2019 -0300
+
+    Comecando a implementar o tabuleiro
+
+[33mcommit 638983af498f383565e669d912de3d892c3807af[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sat Oct 5 09:50:31 2019 -0300
+
+    Criacao da classe Posicao!
+
+[33mcommit ccb4f42d6069efb667e82b57ccaa95fea4cad168[m
+Author: Leticia Machado <leticia.machado50@gmail.com>
+Date:   Sat Oct 5 09:33:27 2019 -0300
+
+    Criacao de projeto
