@@ -6,16 +6,16 @@ namespace xadrez
     class PartidaDeXadrez
     {
         public Tabuleiro tab { get; private set; }
-        private int turno;
-        private Cor jogadorAtual;
-        public bool terminada { get; private set; }
+        public int Turno { get; private set; }
+        public Cor JogadorAtual { get; private set; }
+        public bool Terminada { get; private set; }
 
         public PartidaDeXadrez()
         {
             tab = new Tabuleiro(8, 8);
-            turno = 1;
-            jogadorAtual = Cor.Branca;
-            terminada = false;
+            Turno = 1;
+            JogadorAtual = Cor.Branca;
+            Terminada = false;
             colocarPecas();
         }
 
@@ -25,6 +25,49 @@ namespace xadrez
             p.incrementarQtdeMovimentos();
             Peca pecaCapturada = tab.retirarPeca(destino);
             tab.inserirPeca(p, destino);
+        }
+
+        public void RealizaJogada(Posicao origem, Posicao destino)
+        {
+            ExecutaMovimento(origem, destino);
+            Turno++;
+            mudaJogador();
+        }
+
+        private void mudaJogador()
+        {
+            if (JogadorAtual == Cor.Branca)
+            {
+                JogadorAtual = Cor.Preta;
+            }
+            else
+            {
+                JogadorAtual = Cor.Branca;
+            }
+        }
+
+        public void validarPosicaoOrigem(Posicao pos)
+        {
+            if (tab.peca(pos) == null)
+            {
+                throw new TabuleiroException("Não existe peça nesta posição!");
+            }
+            if (JogadorAtual != tab.peca(pos).Cor)
+            {
+                throw new TabuleiroException("A peça escolhida não lhe pertence!");
+            }
+            if (!tab.peca(pos).existeMovimentosPossiveis())
+            {
+                throw new TabuleiroException("Não há movimentos possíveis para esta peça");
+            }
+
+        }
+        public void validarPosicaoDestino(Posicao origem, Posicao destino)
+        {
+            if (!tab.peca(origem).podeMoverPara(destino))
+            {
+                throw new TabuleiroException("Posição de destino inválida");
+            }
         }
 
         public void colocarPecas()
