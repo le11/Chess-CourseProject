@@ -15,11 +15,20 @@ namespace xadrez__console_
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.Turno);
-            Console.WriteLine("Jogador atual: " + partida.JogadorAtual);
-            Console.WriteLine();
-            if (partida.xeque)
+            if (!partida.Terminada)
             {
-                Console.WriteLine("XEQUE!");
+                Console.WriteLine("Jogador atual: " + partida.JogadorAtual);
+                Console.WriteLine();
+                if (partida.xeque)
+                {
+                    Console.WriteLine("XEQUE!");
+                }
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: "+partida.JogadorAtual);
             }
             
         }
